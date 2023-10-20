@@ -142,7 +142,7 @@ df_final = df_final.loc[:, (df_final != 0).any(axis=0)]
 '''
     st.code(code3, language='python')
 st.markdown("Final Dataframe")
-df_final = pd.read_csv(r"temp_files\df_final.csv")
+df_final = pd.read_csv(r"temp_files/df_final.csv")
 st.caption("Crisis represents our target variable")
 st.dataframe(df_final, hide_index=True)
 
