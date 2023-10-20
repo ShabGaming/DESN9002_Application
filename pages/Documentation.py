@@ -308,6 +308,6 @@ print(classification_report_result_nn)'''
 st.divider()
 # Graph of accuracy of each model
 st.caption("Accuracy of each model")
-df_bar = pd.DataFrame({'Accuracy': [0.73, 0.75, 0.71], 'Model': [
+df_bar = pd.DataFrame({'Accuracy': [0.73, 0.67, 0.71], 'Model': [
                       "Logistic Regression", "Random Forest", "Neural Network"]})
 st.bar_chart(df_bar, x="Model", y="Accuracy", color="Accuracy")
