@@ -253,7 +253,7 @@ from sklearn.metrics import accuracy_score, classification_report
 from keras.callbacks import EarlyStopping
 
 # Load your dataset
-df = pd.read_csv('temp_files\df_final.csv')
+df = pd.read_csv('temp_files/df_final.csv')
 
 # Define the features (X) and the target (y)
 X = df.drop(columns=['crisis'])
