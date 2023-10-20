@@ -233,7 +233,7 @@ print("Classification Report:")
 print(classification_report_result_rf)'''
     st.code(code5, language='python')
     st.text('''
-                Accuracy: 0.75
+                Accuracy: 0.67
                 Classification Report:
                                 precision   recall   f1-score  support
 
