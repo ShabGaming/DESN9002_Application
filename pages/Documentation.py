@@ -50,9 +50,9 @@ st.caption("Word Cloud of Chosen Keywords")
 st.image("resources/output2.png")
 # Drop down menu for choosing API
 API = st.selectbox("Choose API", ["Reddit", "New York Times", "Combined"])
-nyt = pd.read_csv(r"resources\NYT.csv")
-reddit = pd.read_csv(r"resources\Reddit.csv")
-combined = pd.read_csv(r"temp_files\df.csv")
+nyt = pd.read_csv(r"resources/NYT.csv")
+reddit = pd.read_csv(r"resources/Reddit.csv")
+combined = pd.read_csv(r"temp_files/df.csv")
 if API == "Reddit":
     st.caption("Data scraped from Reddit, (Double click to expand a block)")
     st.dataframe(reddit, hide_index=True)
@@ -100,7 +100,7 @@ pipe = pipeline(
     repetition_penalty=1.15)'''
 st.code(code, language='python')
 st.markdown("Prompt Engineered: Your job is to determine if the topic is related to the Armenia Conflict/war with Azerbaijan over the Nagorno-Karabakh region. If the topic is related to the Armenia Conflict/war with Azerbaijan, please type 'yes'. If the topic is not related to the Armenia Conflict/war with Azerbaijan, please type 'no'. Only answer 'yes' or 'no' to the question. ANSWER ONCE with ONE WORD")
-df_temp = pd.read_csv(r"temp_files\df_cleaned.csv")
+df_temp = pd.read_csv(r"temp_files/df_cleaned.csv")
 st.caption("Dataframe after cleaning, and removing outliers (< 2020)")
 st.dataframe(df_temp, hide_index=True, column_order=(
     "Date", "related to conflict", "Topic", "Sub Topic"))
